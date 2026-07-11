@@ -1,5 +1,7 @@
 # OOP Project
 
+---
+
 - Are you in a Group?
     - I am not in a group
 - If so, who else is in your group?
@@ -13,6 +15,6 @@
 - If you are in a group, does everyone have write access to the github repo?
     - N/A
 - Do you have a “Hello World” program that compiles and runs?
-    - Yes
+        Yes
 - Where is the entry point to your project? (src/main/Main.java for example)
-    - src/main/Main.java
+    - `cd` into the `SoundCloud.Term.AppHost` project and enter `dotnet run`. This will open the Aspire dashboard where you can run the project
