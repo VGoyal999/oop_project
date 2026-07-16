@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="SoundCloud.Term.App/SoundCloud.Term.App.csproj" />
-  <Project Path="SoundCloud.Term.AppHost/SoundCloud.Term.AppHost.csproj" />
-  <Project Path="SoundCloud.Term.MusicLibrary/SoundCloud.Term.MusicLibrary.csproj" />
-  <Project Path="SoundCloud.Term.Tests/SoundCloud.Term.Tests.csproj" />
-</Solution>

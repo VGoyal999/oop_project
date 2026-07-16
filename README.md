@@ -18,3 +18,13 @@
         Yes
 - Where is the entry point to your project? (src/main/Main.java for example)
     - `cd` into the `SoundCloud.Term.AppHost` project and enter `dotnet run`. This will open the Aspire dashboard where you can run the project
+
+---
+
+## Builder Pattern
+The `PlaylistManifestBuilder` implements the builder pattern however it defers from the implementation from the Gang of Four.
+- In this implementation there are only 2 classes involved: `PlaylistManifestBuilder` and `PlaylistManifest`
+- `PlaylistManifestBuilder` has one field which is the `PlaylistManifest`. Each method in the builder class will set values in the `PlaylistManifest` class until the `Build` method is called. Then the `PlaylistManifest` object is return and the `PlaylistManifestBuilder` object is reset.
+- This is a Singleton class
+
+## Factory Pattern

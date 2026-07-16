@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Term.MusicPlayer.App/Term.MusicPlayer.App.csproj" />
+  <Project Path="Term.MusicPlayer.Ui/Term.MusicPlayer.Ui.csproj" />
+</Solution>
