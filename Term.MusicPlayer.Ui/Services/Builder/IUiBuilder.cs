@@ -1,4 +1,4 @@
-namespace Term.MusicPlayer.Ui.Services;
+namespace Term.MusicPlayer.Ui.Services.Builder;
 
 public interface IUiBuilder
 {

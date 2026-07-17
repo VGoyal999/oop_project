@@ -1,6 +1,6 @@
 using Term.MusicPlayer.Ui.Models;
 
-namespace Term.MusicPlayer.Ui.Services;
+namespace Term.MusicPlayer.Ui.Services.Builder;
 
 internal class UiBuilder : IUiBuilder
 {
