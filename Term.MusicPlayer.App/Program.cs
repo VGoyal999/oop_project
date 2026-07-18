@@ -6,6 +6,8 @@ var services = new ServiceCollection();
 
 services.AddUiServices();
 
+services.AddScoped<AppHarness>();
+
 var serviceProvider = services.BuildServiceProvider();
 
 var appHarness = serviceProvider.GetRequiredService<AppHarness>();
