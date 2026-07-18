@@ -21,10 +21,23 @@
 
 ---
 
-## Builder Pattern
-The `PlaylistManifestBuilder` implements the builder pattern however it defers from the implementation from the Gang of Four.
-- In this implementation there are only 2 classes involved: `PlaylistManifestBuilder` and `PlaylistManifest`
-- `PlaylistManifestBuilder` has one field which is the `PlaylistManifest`. Each method in the builder class will set values in the `PlaylistManifest` class until the `Build` method is called. Then the `PlaylistManifest` object is return and the `PlaylistManifestBuilder` object is reset.
-- This is a Singleton class
+## Project Description
 
-## Factory Pattern
+This is a terminal based music player that takes inspiration from Neovim and plugins like telescope and fzf.
+The goal for this project is for me to be able to seemlessly navigate through playlists and change music while coding.
+
+## Design Patterns
+
+### Builder Pattern
+
+The implementation of Builder Pattern that I'm using is a different from what is laid out in the Gang of Four text.
+Instead there is the `UiBuilder` class which contains several methods that returns the object itself. In implementation you are supposed to chain together these different methods until you finally call the `Build` method.
+My goal with this class is to build the console output for the main UI that the user will eventually see. Right now it is filled with placeholder text but after I introduce more classes and design patterns the data displayed here will become dynamic.
+
+### Factory Method
+
+My implementation of factory method can be a little confusing at first glance. I actually have to different factory method classes being `HelpLayerRenderFactoy` and `SearchLayerRenderFactory`; however, these two are linked together using a static factory being `RenderLayerFactory`.
+Now this static factory implementation was used just to make Dependency Injection a little easier for myself and can be ignored. `HelpLayerRenderFactory` and `SearchLayerRenderFactory` implement the traditional factory method gone over in the Gang of Four text. 
+Right now they also display static hardcoded data but these will eventually be updated to include dynamic UI as the project progresses.
+
+
